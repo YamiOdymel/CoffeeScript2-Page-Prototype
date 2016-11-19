@@ -1,0 +1,327 @@
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+    <link rel="stylesheet" href="./assets/styles/tocas.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+    html {
+        font-size: 16px;
+    }
+    body {
+        font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif;
+    }
+    * {
+        letter-spacing: .3px;
+    }
+
+    /* Navbar */
+    body > nav {
+        height: 55px;
+        background-color: #484040;
+    }
+    body > nav > .container > a {
+        display: inline-block;
+        padding: .8em 1em;
+        font-size: 20px;
+        color: #FFF;
+    }
+    body > nav > .container > a.right {
+        float: right;
+    }
+
+    /* Jumbotron */
+    body > header {
+        padding: 4em 0 0;
+        background-color: #423737;
+    }
+    body > header h1 {
+        text-align: center;
+        color: #ffffff;
+        font-size: 4em;
+    }
+    body > header h1 > small {
+        font-size: .3em;
+        display: block;
+        margin-top: 2em;
+        opacity: 0.9;
+    }
+
+    body > header nav {
+        margin-top: 3em;
+        text-align: center;
+    }
+    body > header nav > button {
+        padding: .8em .8em;
+        background: #5D5D5D;
+        color: #fff;
+        font-size: 1.2em;
+        border-radius: 6px;
+        min-width: 130px;
+    }
+    body > header nav > button:first-child {
+        margin-right: 1em;
+    }
+    
+    body > header > .container > div {
+        margin-top: 4em;
+    }
+
+    .hljs {
+        background-color: #251f1f;
+        font-family: Hack;
+        line-height: 1.5em;
+        padding: 3em 5em;
+        border-radius: 6px;
+    }
+    .hljs, .hljs-subst {
+        color: #eed1b3;
+    }
+    .hljs-title, .hljs-section {
+        color: #cda869
+    }
+    .hljs-type, .hljs-string, .hljs-number, .hljs-selector-id, .hljs-selector-class, .hljs-quote, .hljs-template-tag, .hljs-deletion {
+        color: #cda869;
+    }
+
+    body > section {
+        padding: 2em 0 6em;
+    }
+    body > section:nth-of-type(2) {
+        background-color: fbfbfb;
+    }
+    body > section > .container > h2 {
+        text-align: center;
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #423737;
+        margin-bottom: 2em;
+    }
+    body > section > .container h3 {
+            margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    color: #4e4343;
+    font-weight: 500;
+    }
+    body > section > .container p {
+               color: #5D5D5D;
+    }
+    body > section > .container code {
+               border-radius: 0;
+               min-height: 200px; 
+    padding: 2em 2em;
+    font-size: .8em;
+    }
+            
+    .circle {
+        display: inline-block;
+    background-color: #5D5D5D;
+    color: #f1f1f1;
+    border-radius: 500em;
+    padding: 1.5em 1.4em;
+    height: 100px;
+    width: 100px;
+    }
+    .circle .icon {
+        font-size: 3em;
+    }
+    .circle + h4 {
+            font-size: 1.3em;
+        color: #5d5d5d;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="ts narrow container">
+            <a href="#">CoffeeScript</a>
+            <a class="right" href="#">Docs</a>
+            <a class="right" href="#">GitHub</a>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <header>
+
+        <!-- Container -->
+        <div class="ts narrow container">
+
+            <!-- Header -->
+            <h1>
+                CoffeeScript
+                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
+            </h1>
+            <!-- / Header -->
+
+
+            <!-- Call to action -->
+            <nav>
+                <button>Try Online</button>
+                <button>Install</button>
+            </nav>
+            <!-- / Call to action -->
+
+            <!-- Syntax Overview -->
+            <div>
+                <pre><code class="coffeescript">listen = (el, event, handler) ->
+    if el.addEventListener
+        el.addEventListener event, handler
+    else
+        el.attachEvent 'on' + event, ->
+        handler.call el</code></pre>
+            </div>
+            <!-- Syntax Overview -->
+
+        </div>
+        <!-- / Container -->
+
+    </header>
+    <!-- / Jumbotron -->
+
+
+    <!-- Features -->
+    <section>
+        <div class="ts narrow container">
+
+            <!-- Title -->
+            <h2>Features</h2>
+            <!-- / Title -->
+
+
+            <!-- Features Grid -->
+            <div class="ts grid">
+
+                <!-- Group -->
+                <div class="seven wide column">
+                    <h3>With more Caffeine!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor aliquet faucibus. Nulla rhoncus augue eu ipsum fermentum, et semper diam lacinia. Nam non congue elit.</p>
+                </div>
+                <div class="nine wide column">
+                    <pre><code class="coffeescript">listen = (el, event, handler) ->
+        if el.addEventListener
+            el.addEventListener event, handler
+        else
+            el.attachEvent 'on' + event, ->
+            handler.call el</code></pre>
+                </div>
+                <!-- / Group -->
+
+                <!-- Group -->
+                <div class="seven wide column">
+                    <h3>Functions</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor aliquet faucibus. Nulla rhoncus augue eu ipsum fermentum, et semper diam lacinia. Nam non congue elit.</p>
+                </div>
+                <div class="nine wide column">
+                    <pre><code class="coffeescript"># Eat lunch.
+eat food for food in ['toast', 'cheese', 'wine']
+
+# Fine five course dining.
+courses = ['greens', 'caviar', 'truffles', 'roast', 'cake']
+menu i + 1, dish for dish, i in courses
+
+# Health conscious meal.
+foods = ['broccoli', 'spinach', 'chocolate']
+eat food for food in foods when food isnt 'chocolate'</code></pre>
+                </div>
+                <!-- / Group -->
+
+
+                <!-- Group -->
+                <div class="seven wide column">
+                    <h3>Objects and Arrays</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor aliquet faucibus. Nulla rhoncus augue eu ipsum fermentum, et semper diam lacinia. Nam non congue elit.</p>
+                </div>
+                <div class="nine wide column">
+                    <pre><code class="coffeescript">bitlist = [
+  1, 0, 1
+  0, 0, 1
+  1, 1, 0
+]
+
+kids =
+  brother:
+    name: "Max"
+    age:  11
+  sister:
+    name: "Ida"
+    age:  9</code></pre>
+                </div>
+                <!-- / Group -->
+
+            </div>
+            <!-- / Features Grid -->
+
+        </div>
+    </section>
+    <!-- / Features -->
+
+
+    <!-- Links -->
+    <section>
+        <div class="ts narrow container">
+
+            <!-- Title -->
+            <h2>Links</h2>
+            <!-- / Title -->
+
+
+            <!-- Links Grid -->
+            <div class="ts three column grid">
+
+                <!-- Block -->
+                <div class="center aligned column">
+                    
+                    <!-- Icon -->
+                    <div class="circle"><i class="file text icon" style="font-size: 3em;"></i></div>
+                    <!-- / Icon -->
+
+                    <h4>Documentations</h4>
+
+                </div>
+                <!-- / Block -->
+
+                <!-- Block -->
+                <div class="center aligned column">
+                    
+                    <!-- Icon -->
+                    <div class="circle"><i class="code icon" style="font-size: 3em;"></i></div>
+                    <!-- / Icon -->
+
+                    <h4>Examples</h4>
+                    
+                </div>
+                <!-- / Block -->
+
+                <!-- Block -->
+                <div class="center aligned column">
+                    
+                    <!-- Icon -->
+                    <div class="circle"><i class="code icon" style="font-size: 3em;"></i></div>
+                    <!-- / Icon -->
+
+                    <h4>Examples</h4>
+                    
+                </div>
+                <!-- / Block -->
+
+            </div>
+            <!-- / Links Grid -->
+
+        </div>
+    </section>
+    <!-- / Links -->
+
+
+    <nav>
+        <div class="ts narrow container">
+            <a href="#">CoffeeScript</a>
+            <a class="right" href="#">Docs</a>
+            <a class="right" href="#">GitHub</a>
+        </div>
+    </nav>
+
+</body>
+</html>

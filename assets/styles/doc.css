@@ -1,0 +1,115 @@
+/*-------------------//
+//        Base
+//-------------------*/
+h1, h2, h3, h4 {
+    text-align: left !important;
+}
+
+/*-------------------//
+//     Jumbotron
+//-------------------*/
+body > header {
+    padding: 4em 0 4em;
+}
+body > header h1 > small {
+    font-size: .3em;
+    display: block;
+    margin-top: 2em;
+    opacity: 0.9;
+}
+
+/*-------------------//
+//      Section
+//-------------------*/
+body > section > .container > h2:not(:first-child) {
+    margin-top: 2em;
+}
+body > section > .container code {
+    min-height: 0;
+}
+
+/*-------------------//
+//      Sidebar
+//-------------------*/
+ul {
+    padding: 0;
+    list-style: none;
+    border-right: 1px solid #ececec;
+    margin-right: 6px;
+}
+ul > li {
+    padding: .4em 1em .4em 0;
+    font-size: .9em;
+}
+ul > li:first-child {
+    padding-top: 0
+}
+ul > li > a {
+    color: #5D5D5D;
+}
+
+/*-------------------//
+//    Doc Section
+//-------------------*/
+h2 {
+    color: #423737;
+    border-bottom: 1px solid #EEE;
+    padding-bottom: .5em;
+}
+h2:not(:first-child) {
+    margin-top: 3em;
+}
+
+/* Code preview */
+.preview {
+    margin-top: 2em;
+}
+.preview > pre:first-child {
+    margin-bottom: 0;
+}
+
+/*-- Code block --*/
+pre {
+    position: relative;
+    border-top: 1px solid #292929;
+    border-bottom: 1px solid #151515;
+}
+pre + pre {
+    margin-top: 0;
+}
+pre + pre > code {
+    background-color: #2f2828 !important;
+}
+/* Description after preview */
+.preview + p {
+        margin-top: 1.9em;
+}
+
+/*-- Code preview footer --*/
+pre > menu {
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+}
+/* Language label */
+pre > menu > .label {
+    opacity: 0.4;
+    padding: .65em .6em;
+    color: #A3F7BF;
+    pointer-events: none;
+    user-select: none;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 4px;
+    margin-right: 1em;
+}
+/* Function button */
+pre > menu > button {
+    padding: 0.3em 0.6em;
+    color: #A3F7BF;
+    background: #3a3a3a;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 4px;
+    min-width: 50px;
+}

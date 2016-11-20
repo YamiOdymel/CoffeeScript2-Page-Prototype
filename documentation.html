@@ -3,176 +3,11 @@
     <title></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
     <link rel="stylesheet" href="./assets/styles/tocas.min.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/doc.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <style>
-    html {
-        font-size: 16px;
-    }
-    body {
-        font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif;
-    }
-    * {
-        letter-spacing: .3px;
-    }
-
-    /* Navbar */
-    body > nav {
-        height: 55px;
-        background-color: #484040;
-    }
-    body > nav > .container > a {
-        display: inline-block;
-        padding: .8em 1em;
-        font-size: 20px;
-        color: #FFF;
-    }
-    body > nav > .container > a.right {
-        float: right;
-    }
-
-    /* Jumbotron */
-    body > header {
-        padding: 4em 0 4em;
-        background-color: #423737;
-    }
-    body > header h1 {
-        color: #ffffff;
-        font-size: 4em;
-    }
-    body > header h1 > small {
-        font-size: .3em;
-        display: block;
-        margin-top: 2em;
-        opacity: 0.9;
-    }
-    .hljs {
-        background-color: #251f1f;
-        font-family: Hack;
-        line-height: 1.5em;
-        padding: 3em 5em;
-        border-radius: 6px;
-    }
-    .hljs, .hljs-subst {
-        color: #eed1b3;
-    }
-    .hljs-title, .hljs-section {
-        color: #cda869
-    }
-    .hljs-type, .hljs-string, .hljs-number, .hljs-selector-id, .hljs-selector-class, .hljs-quote, .hljs-template-tag, .hljs-deletion {
-        color: #cda869;
-    }
-
-    body > section {
-        padding: 2em 0 6em;
-    }
-    body > section:nth-of-type(2) {
-        background-color: fbfbfb;
-    }
-    body > section > .container > h2 {
-        font-size: 2.5em;
-        font-weight: bold;
-        color: #423737;
-        margin-bottom: 1em;
-    }
-    body > section > .container > h2:not(:first-child) {
-        margin-top: 2em;
-    }
-    body > section > .container > h2 > small {
-        font-size: .5em;
-        display: block;
-        margin-top: 1em;
-    }
-    body > section > .container h3 {
-            margin-top: 0;
-    margin-bottom: 1em;
-    font-size: 1.5em;
-    color: #4e4343;
-    font-weight: 500;
-    }
-    body > section > .container p {
-               color: #5D5D5D;
-    }
-    body > section > .container code {
-               border-radius: 0;
-    padding: 2em 2em 3em;
-    font-size: .8em;
-    
-    }
-
-    ul {
-            padding: 0;
-    list-style: none;
-        border-right: 1px solid #ececec;
-    margin-right: 6px;
-    }
-    ul > li {
-            padding: .4em 1em .4em 0;
-    font-size: .9em;
-    }
-    ul > li:first-child {
-            padding-top: 0
-    }
-    ul > li > a {
-        color: #5D5D5D;
-    }
-    h2 {
-            color: #423737;
-                
-    border-bottom: 1px solid #EEE;
-    padding-bottom: .5em;
-    }
-    h2:not(:first-child) {
-        margin-top: 3em;
-    }
-    .preview {
-        margin-top: 2em;
-    }
-    .preview > pre:first-child {
-        margin-bottom: 0;
-    }
-    pre + pre {
-        margin-top: 0;
-    }
-    .preview + p {
-            margin-top: 1.9em;
-    }
-    pre + pre > code {
-        background-color: #2f2828 !important;
-    }
-    pre {
-        position: relative;
-            border-top: 1px solid #292929;
-    border-bottom: 1px solid #151515;
-    }
-    pre > menu {
-        position: absolute;
-    right: 1em;
-    bottom: 1em;
-    }
-    pre > menu > .label {
-            opacity: 0.4;
-    padding: .65em .6em;
-    color: #A3F7BF;
-    pointer-events: none;
-        user-select: none;
-    font-size: 12px;
-    font-weight: 400;
-    border-radius: 4px;
-    margin-right: 1em;
-    }
-    pre > menu > button {
-            padding: 0.3em 0.6em;
-    color: #A3F7BF;
-    background: #3a3a3a;
-    font-size: 12px;
-    font-weight: 400;
-    border-radius: 4px;
-    min-width: 50px;
-    }
-    
-    </style>
 </head>
 <body>
     <nav>
@@ -244,7 +79,7 @@
 }</code><menu><span class="label">JavaScript</span><button>Run</button></menu></pre>
                 </div>
 
-                <p>In JavaScript, you can't use reserved words, like class, as properties of an object, without quoting them as strings. CoffeeScript notices reserved words used as keys in objects and quotes them for you, so you don't have to worry about it (say, when using jQuery).</p>
+                <p>In JavaScript, you can't use reserved words, like <span class="ts small label">class</span>, as properties of an object, without quoting them as strings. CoffeeScript notices reserved words used as keys in objects and quotes them for you, so you don't have to worry about it (say, when using jQuery).</p>
 
                 <div class="preview">
                     <pre><code class="coffeescript">$('.account').attr class: 'active'
@@ -257,26 +92,34 @@ log object.class</code><menu><span class="label">CoffeeScript</span><button>Load
 log(object["class"]);</code><menu><span class="label">JavaScript</span><button>Run</button></menu></pre>
                 </div>
 
-                <h2>Objects and Arrays</h2>
-                <p>The CoffeeScript literals for objects and arrays look very similar to their JavaScript cousins. When each property is listed on its own line, the commas are optional. Objects may be created using indentation instead of explicit braces, similar to YAML.</p>
+                <h2>Lexical Scoping and Variable Safety</h2>
+                <p>The CoffeeScript compiler takes care to make sure that all of your variables are properly declared within lexical scope — you never need to write  var yourself.</p>
                 <div class="preview">
-                    <pre><code class="coffeescript">listen = (el, event, handler) ->
-        if el.addEventListener
-            el.addEventListener event, handler
-        else
-            el.attachEvent 'on' + event, ->
-            handler.call el</code><menu><span class="label">CoffeeScript</span><button>Load</button></menu></pre>
-                    <pre><code class="javascript">function listen (el, event, handler) {
-  if (el.addEventListener) {
-    return el.addEventListener(event, handler);
-  } else {
-    return el.attachEvent("on" + event, function() {
-      return handler.call(el);
-    });
-  }
-}</code><menu><span class="label">JavaScript</span><button>Run</button></menu></pre>
+                    <pre><code class="coffeescript">outer = 1
+changeNumbers = ->
+  inner = -1
+  outer = 10
+inner = changeNumbers()</code><menu><span class="label">CoffeeScript</span><button>Load</button></menu></pre>
+                    <pre><code class="javascript">var changeNumbers, inner, outer;
+
+outer = 1;
+
+changeNumbers = function() {
+  var inner;
+  inner = -1;
+  return outer = 10;
+};
+
+inner = changeNumbers();</code><menu><span class="label">JavaScript</span><button>Run</button></menu></pre>
                 </div>
                 
+                <p>Notice how all of the variable declarations have been pushed up to the top of the closest scope, the first time they appear. outer is not redeclared within the inner function, because it's already in scope; inner within the function, on the other hand, should not be able to change the value of the external variable of the same name, and therefore has a declaration of its own.</p>
+
+                <p>This behavior is effectively identical to Ruby's scope for local variables. Because you don't have direct access to the <span class="ts small label">var</span> keyword, it's impossible to shadow an outer variable on purpose, you may only refer to it. So be careful that you're not reusing the name of an external variable accidentally, if you're writing a deeply nested function.</p>
+
+                <p>Although suppressed within this documentation for clarity, all CoffeeScript output is wrapped in an anonymous function:  <span class="ts small label">(function(){ ... })();</span> This safety wrapper, combined with the automatic generation of the <span class="ts small label">var</span> keyword, make it exceedingly difficult to pollute the global namespace by accident.</p>
+
+                <p>If you'd like to create top-level variables for other scripts to use, attach them as properties on window; attach them as properties on the exports object in CommonJS; or use an export statement. If you’re targeting both CommonJS and the browser, the existential operator (covered below), gives you a reliable way to figure out where to add them: <span class="ts small label">exports ? this</span></p>
                 
             </section>
             <!-- / Right Side -->

@@ -1,0 +1,284 @@
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+    <link rel="stylesheet" href="./assets/styles/tocas.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+    html {
+        font-size: 16px;
+    }
+    body {
+        font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif;
+    }
+    * {
+        letter-spacing: .3px;
+    }
+
+    /* Navbar */
+    body > nav {
+        height: 55px;
+        background-color: #484040;
+    }
+    body > nav > .container > a {
+        display: inline-block;
+        padding: .8em 1em;
+        font-size: 20px;
+        color: #FFF;
+    }
+    body > nav > .container > a.right {
+        float: right;
+    }
+
+    /* Jumbotron */
+    body > header {
+        padding: 4em 0 4em;
+        background-color: #423737;
+    }
+    body > header h1 {
+        color: #ffffff;
+        font-size: 4em;
+    }
+    body > header h1 > small {
+        font-size: .3em;
+        display: block;
+        margin-top: 2em;
+        opacity: 0.9;
+    }
+    .hljs {
+        background-color: #251f1f;
+        font-family: Hack;
+        line-height: 1.5em;
+        padding: 3em 5em;
+        border-radius: 6px;
+    }
+    .hljs, .hljs-subst {
+        color: #eed1b3;
+    }
+    .hljs-title, .hljs-section {
+        color: #cda869
+    }
+    .hljs-type, .hljs-string, .hljs-number, .hljs-selector-id, .hljs-selector-class, .hljs-quote, .hljs-template-tag, .hljs-deletion {
+        color: #cda869;
+    }
+
+    body > section {
+        padding: 2em 0 6em;
+    }
+    body > section:nth-of-type(2) {
+        background-color: fbfbfb;
+    }
+    body > section > .container > h2 {
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #423737;
+        margin-bottom: 1em;
+    }
+    body > section > .container > h2:not(:first-child) {
+        margin-top: 2em;
+    }
+    body > section > .container > h2 > small {
+        font-size: .5em;
+        display: block;
+        margin-top: 1em;
+    }
+    body > section > .container h3 {
+            margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    color: #4e4343;
+    font-weight: 500;
+    }
+    body > section > .container p {
+               color: #5D5D5D;
+    }
+    body > section > .container code {
+               border-radius: 0;
+               min-height: 200px;
+    padding: 2em 2em;
+    font-size: .8em;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="ts narrow container">
+            <a href="#">CoffeeScript</a>
+            <a class="right" href="#">Docs</a>
+            <a class="right" href="#">GitHub</a>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <header>
+
+        <!-- Container -->
+        <div class="ts narrow container">
+
+            <!-- Header -->
+            <h1>
+                Reference
+                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
+            </h1>
+            <!-- / Header -->
+
+        </div>
+        <!-- / Container -->
+
+    </header>
+    <!-- / Jumbotron -->
+
+
+    <!-- Section -->
+    <section>
+        <div class="ts narrow container">
+
+            <!-- Title -->
+            <h2>
+                Installation
+            </h2>
+            <!-- / Title -->
+
+            <p>The CoffeeScript compiler is itself written in CoffeeScript, using the Jison parser generator. The command-line version of <span class="ts tiny label">coffee</span> is available as a Node.js utility. The core compiler however, does not depend on Node, and can be run in any JavaScript environment, or in the browser (see "Try CoffeeScript", above).</p>
+
+            <p>To install, first make sure you have a working copy of the latest stable version of Node.js. You can then install CoffeeScript globally with npm:</p>
+
+            
+            <blockquote class="ts secondary quote">
+                <p>npm install -g coffee-script</p>
+            </blockquote>
+
+            <p>When you need CoffeeScript as a dependency, install it locally:</p>
+
+            <blockquote class="ts secondary quote">
+                <p>npm install --save coffee-script</p>
+            </blockquote>
+
+            <p>If you'd prefer to install the latest master version of CoffeeScript, you can clone the CoffeeScript source repository from GitHub, or download the source directly. To install the latest master CoffeeScript compiler with npm:</p>
+
+            <blockquote class="ts secondary quote">
+                <p>npm install -g jashkenas/coffeescript</p>
+            </blockquote>
+
+            <p>Or, if you want to install to <span class="ts tiny label">/usr/local</span>, and don't want to use npm to manage it, open the <span class="ts tiny label">coffee-script</span> directory and run:</p>
+
+            <blockquote class="ts secondary quote">
+                <p>sudo bin/cake install</p>
+            </blockquote>
+
+            <!-- Title -->
+            <h2>Usage</h2>
+            <!-- / Title -->
+
+            <p>Once installed, you should have access to the <span class="ts tiny label">coffee</span> command, which can execute scripts, compile <span class="ts tiny label">.coffee</span> files into <span class="ts tiny label">.js</span>, and provide an interactive REPL. The <span class="ts tiny label">coffee</span> command takes the following options:</p>
+
+            <br>
+
+            <!-- Args Grid -->
+            <div class="ts grid">
+
+                <!-- Group -->
+                <div class="four wide column">
+                    <p>-c, --compile</p>
+                </div>
+                <div class="twelve wide column">
+                    <p>Compile a .coffee script into a .js JavaScript file of the same name.</p>
+                </div>
+                <!-- / Group -->
+
+                <!-- Group -->
+                <div class="four wide column">
+                    <p></p>
+                    <p>-m, --map</p>
+                </div>
+                <div class="twelve wide column">
+                    <p></p>
+                    <p>Generate source maps alongside the compiled JavaScript files. Adds sourceMappingURL directives to the JavaScript as well.</p>
+                </div>
+                <!-- / Group -->
+
+                <!-- Group -->
+                <div class="four wide column">
+                    <p></p>
+                    <p>-M, --inline-map</p>
+                </div>
+                <div class="twelve wide column">
+                    <p></p>
+                    <p>Just like --map, but include the source map directly in the compiled JavaScript files, rather than in a separate file.</p>
+                </div>
+                <!-- / Group -->
+                
+                <!-- Group -->
+                <div class="four wide column">
+                    <p></p>
+                    <p>-i, --interactive</p>
+                </div>
+                <div class="twelve wide column">
+                    <p></p>
+                    <p>Launch an interactive CoffeeScript session to try short snippets. Identical to calling coffee with no arguments.</p>
+                </div>
+                <!-- / Group -->
+
+                <!-- Group -->
+                <div class="four wide column">
+                    <p></p>
+                    <p>-o, --output [DIR]</p>
+                </div>
+                <div class="twelve wide column">
+                    <p></p>
+                    <p>Write out all compiled JavaScript files into the specified directory. Use in conjunction with --compile or --watch.</p>
+                </div>
+                <!-- / Group -->
+
+                <!-- Group -->
+                <div class="four wide column">
+                    <p></p>
+                    <p>-j, --join [FILE]</p>
+                </div>
+                <div class="twelve wide column">
+                    <p></p>
+                    <p>Before compiling, concatenate all scripts together in the order they were passed, and write them into the specified file. (Deprecated.)</p>
+                </div>
+                <!-- / Group -->
+
+                <!-- Group -->
+                <div class="four wide column">
+                    <p></p>
+                    <p>-w, --watch</p>
+                </div>
+                <div class="twelve wide column">
+                    <p></p>
+                    <p>Watch files for changes, rerunning the specified command when any file is updated.</p>
+                </div>
+                <!-- / Group -->
+
+                <!-- Group -->
+                <div class="four wide column">
+                    <p></p>
+                    <p>-p, --print</p>
+                </div>
+                <div class="twelve wide column">
+                    <p></p>
+                    <p>Instead of writing out the JavaScript as a file, print it directly to stdout.</p>
+                </div>
+                <!-- / Group -->
+
+            </div>
+            <!-- / Args Grid -->
+
+        </div>
+    </section>
+    <!-- / Section -->
+
+    <nav>
+        <div class="ts narrow container">
+            <a href="#">CoffeeScript</a>
+            <a class="right" href="#">Docs</a>
+            <a class="right" href="#">GitHub</a>
+        </div>
+    </nav>
+
+</body>
+</html>

@@ -1,0 +1,297 @@
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+    <link rel="stylesheet" href="./assets/styles/tocas.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+    html {
+        font-size: 16px;
+    }
+    body {
+        font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif;
+    }
+    * {
+        letter-spacing: .3px;
+    }
+
+    /* Navbar */
+    body > nav {
+        height: 55px;
+        background-color: #484040;
+    }
+    body > nav > .container > a {
+        display: inline-block;
+        padding: .8em 1em;
+        font-size: 20px;
+        color: #FFF;
+    }
+    body > nav > .container > a.right {
+        float: right;
+    }
+
+    /* Jumbotron */
+    body > header {
+        padding: 4em 0 4em;
+        background-color: #423737;
+    }
+    body > header h1 {
+        color: #ffffff;
+        font-size: 4em;
+    }
+    body > header h1 > small {
+        font-size: .3em;
+        display: block;
+        margin-top: 2em;
+        opacity: 0.9;
+    }
+    .hljs {
+        background-color: #251f1f;
+        font-family: Hack;
+        line-height: 1.5em;
+        padding: 3em 5em;
+        border-radius: 6px;
+    }
+    .hljs, .hljs-subst {
+        color: #eed1b3;
+    }
+    .hljs-title, .hljs-section {
+        color: #cda869
+    }
+    .hljs-type, .hljs-string, .hljs-number, .hljs-selector-id, .hljs-selector-class, .hljs-quote, .hljs-template-tag, .hljs-deletion {
+        color: #cda869;
+    }
+
+    body > section {
+        padding: 2em 0 6em;
+    }
+    body > section:nth-of-type(2) {
+        background-color: fbfbfb;
+    }
+    body > section > .container > h2 {
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #423737;
+        margin-bottom: 1em;
+    }
+    body > section > .container > h2:not(:first-child) {
+        margin-top: 2em;
+    }
+    body > section > .container > h2 > small {
+        font-size: .5em;
+        display: block;
+        margin-top: 1em;
+    }
+    body > section > .container h3 {
+            margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    color: #4e4343;
+    font-weight: 500;
+    }
+    body > section > .container p {
+               color: #5D5D5D;
+    }
+    body > section > .container code {
+               border-radius: 0;
+    padding: 2em 2em 3em;
+    font-size: .8em;
+    
+    }
+
+    ul {
+            padding: 0;
+    list-style: none;
+        border-right: 1px solid #ececec;
+    margin-right: 6px;
+    }
+    ul > li {
+            padding: .4em 1em .4em 0;
+    font-size: .9em;
+    }
+    ul > li:first-child {
+            padding-top: 0
+    }
+    ul > li > a {
+        color: #5D5D5D;
+    }
+    h2 {
+            color: #423737;
+                
+    border-bottom: 1px solid #EEE;
+    padding-bottom: .5em;
+    }
+    h2:not(:first-child) {
+        margin-top: 3em;
+    }
+    .preview {
+        margin-top: 2em;
+    }
+    .preview > pre:first-child {
+        margin-bottom: 0;
+    }
+    pre + pre {
+        margin-top: 0;
+    }
+    .preview + p {
+            margin-top: 1.9em;
+    }
+    pre + pre > code {
+        background-color: #2f2828 !important;
+    }
+    pre {
+        position: relative;
+            border-top: 1px solid #292929;
+    border-bottom: 1px solid #151515;
+    }
+    pre > menu {
+        position: absolute;
+    right: 1em;
+    bottom: 1em;
+    }
+    pre > menu > .label {
+            opacity: 0.4;
+    padding: .65em .6em;
+    color: #A3F7BF;
+    pointer-events: none;
+        user-select: none;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 4px;
+    margin-right: 1em;
+    }
+    pre > menu > button {
+            padding: 0.3em 0.6em;
+    color: #A3F7BF;
+    background: #3a3a3a;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 4px;
+    min-width: 50px;
+    }
+    
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="ts narrow container">
+            <a href="#">CoffeeScript</a>
+            <a class="right" href="#">Docs</a>
+            <a class="right" href="#">GitHub</a>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <header>
+
+        <!-- Container -->
+        <div class="ts narrow container">
+
+            <!-- Header -->
+            <h1>
+                Documentation
+                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
+            </h1>
+            <!-- / Header -->
+
+        </div>
+        <!-- / Container -->
+
+    </header>
+    <!-- / Jumbotron -->
+
+
+    <!-- Section -->
+    <section>
+        <div class="ts narrow container grid">
+
+            <!-- Left Sidebar -->
+            <aside class="four wide column">
+                <h5></h5>
+                <ul>
+                    <li><a href="#">Objects and Arrays</a></li>
+                    <li><a href="#">Lexical Scoping and Variable Safety</a></li>
+                    <li><a href="#">If, Else, Unless, and Conditional Assignment</a></li>
+                    <li><a href="#">Splats...</a></li>
+                    <li><a href="#">Loops and Comprehensions</a></li>
+                    <li><a href="#">Array Slicing and Splicing with Ranges</a></li>
+                </ul>
+            </aside>
+            <!-- / Left Sidebar -->
+
+
+            <!-- Right Side -->
+            <section class="twelve wide column">
+                <h2>Objects and Arrays</h2>
+                <p>The CoffeeScript literals for objects and arrays look very similar to their JavaScript cousins. When each property is listed on its own line, the commas are optional. Objects may be created using indentation instead of explicit braces, similar to YAML.</p>
+                <div class="preview">
+                    <pre><code class="coffeescript">listen = (el, event, handler) ->
+        if el.addEventListener
+            el.addEventListener event, handler
+        else
+            el.attachEvent 'on' + event, ->
+            handler.call el</code><menu><span class="label">CoffeeScript</span><button>Load</button></menu></pre>
+                    <pre><code class="javascript">function listen (el, event, handler) {
+  if (el.addEventListener) {
+    return el.addEventListener(event, handler);
+  } else {
+    return el.attachEvent("on" + event, function() {
+      return handler.call(el);
+    });
+  }
+}</code><menu><span class="label">JavaScript</span><button>Run</button></menu></pre>
+                </div>
+
+                <p>In JavaScript, you can't use reserved words, like class, as properties of an object, without quoting them as strings. CoffeeScript notices reserved words used as keys in objects and quotes them for you, so you don't have to worry about it (say, when using jQuery).</p>
+
+                <div class="preview">
+                    <pre><code class="coffeescript">$('.account').attr class: 'active'
+
+log object.class</code><menu><span class="label">CoffeeScript</span><button>Load</button></menu></pre>
+                    <pre><code class="javascript">$('.account').attr({
+  "class": 'active'
+});
+
+log(object["class"]);</code><menu><span class="label">JavaScript</span><button>Run</button></menu></pre>
+                </div>
+
+                <h2>Objects and Arrays</h2>
+                <p>The CoffeeScript literals for objects and arrays look very similar to their JavaScript cousins. When each property is listed on its own line, the commas are optional. Objects may be created using indentation instead of explicit braces, similar to YAML.</p>
+                <div class="preview">
+                    <pre><code class="coffeescript">listen = (el, event, handler) ->
+        if el.addEventListener
+            el.addEventListener event, handler
+        else
+            el.attachEvent 'on' + event, ->
+            handler.call el</code><menu><span class="label">CoffeeScript</span><button>Load</button></menu></pre>
+                    <pre><code class="javascript">function listen (el, event, handler) {
+  if (el.addEventListener) {
+    return el.addEventListener(event, handler);
+  } else {
+    return el.attachEvent("on" + event, function() {
+      return handler.call(el);
+    });
+  }
+}</code><menu><span class="label">JavaScript</span><button>Run</button></menu></pre>
+                </div>
+                
+                
+            </section>
+            <!-- / Right Side -->
+
+        </div>
+    </section>
+    <!-- / Section -->
+
+    <nav>
+        <div class="ts narrow container">
+            <a href="#">CoffeeScript</a>
+            <a class="right" href="#">Docs</a>
+            <a class="right" href="#">GitHub</a>
+        </div>
+    </nav>
+
+</body>
+</html>

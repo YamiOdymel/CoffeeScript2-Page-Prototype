@@ -10,30 +10,29 @@
     <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
+    <!-- Navbar -->
     <nav>
         <div class="ts narrow container">
-            <a href="#">CoffeeScript</a>
-            <a class="right" href="#">Docs</a>
+            <a href="index.html">CoffeeScript</a>
+            <a class="right" href="documentation.html">Docs</a>
             <a class="right" href="#">GitHub</a>
         </div>
     </nav>
+    <!-- / Navbar -->
+
 
     <!-- Jumbotron -->
     <header>
-
         <!-- Container -->
         <div class="ts narrow container">
-
             <!-- Header -->
             <h1>
                 Documentation
                 <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
             </h1>
             <!-- / Header -->
-
         </div>
         <!-- / Container -->
-
     </header>
     <!-- / Jumbotron -->
 
@@ -57,10 +56,13 @@
             <!-- / Left Sidebar -->
 
 
-            <!-- Right Side -->
+            <!-- Right Main Section -->
             <section class="twelve wide column">
+                
                 <h2>Objects and Arrays</h2>
                 <p>The CoffeeScript literals for objects and arrays look very similar to their JavaScript cousins. When each property is listed on its own line, the commas are optional. Objects may be created using indentation instead of explicit braces, similar to YAML.</p>
+                
+                <!-- Code Preview -->
                 <div class="preview">
                     <pre><code class="coffeescript">listen = (el, event, handler) ->
         if el.addEventListener
@@ -78,9 +80,11 @@
   }
 }</code><menu><span class="label">JavaScript</span><button>Run</button></menu></pre>
                 </div>
+                <!-- / Code Preview -->
 
                 <p>In JavaScript, you can't use reserved words, like <span class="ts small label">class</span>, as properties of an object, without quoting them as strings. CoffeeScript notices reserved words used as keys in objects and quotes them for you, so you don't have to worry about it (say, when using jQuery).</p>
 
+                <!-- Code Preview -->
                 <div class="preview">
                     <pre><code class="coffeescript">$('.account').attr class: 'active'
 
@@ -91,9 +95,12 @@ log object.class</code><menu><span class="label">CoffeeScript</span><button>Load
 
 log(object["class"]);</code><menu><span class="label">JavaScript</span><button>Run</button></menu></pre>
                 </div>
+                <!-- / Code Preview -->
 
                 <h2>Lexical Scoping and Variable Safety</h2>
                 <p>The CoffeeScript compiler takes care to make sure that all of your variables are properly declared within lexical scope — you never need to write  var yourself.</p>
+                
+                <!-- Code Preview -->
                 <div class="preview">
                     <pre><code class="coffeescript">outer = 1
 changeNumbers = ->
@@ -112,6 +119,7 @@ changeNumbers = function() {
 
 inner = changeNumbers();</code><menu><span class="label">JavaScript</span><button>Run</button></menu></pre>
                 </div>
+                <!-- / Code Preview -->
                 
                 <p>Notice how all of the variable declarations have been pushed up to the top of the closest scope, the first time they appear. outer is not redeclared within the inner function, because it's already in scope; inner within the function, on the other hand, should not be able to change the value of the external variable of the same name, and therefore has a declaration of its own.</p>
 
@@ -128,13 +136,14 @@ inner = changeNumbers();</code><menu><span class="label">JavaScript</span><butto
     </section>
     <!-- / Section -->
 
+
+    <!-- Footer Navbar -->
     <nav>
         <div class="ts narrow container">
-            <a href="#">CoffeeScript</a>
-            <a class="right" href="#">Docs</a>
+            <a class="right" href="documentation.html">Docs</a>
             <a class="right" href="#">GitHub</a>
         </div>
     </nav>
-
+    <!-- / Footer Navbar -->
 </body>
 </html>

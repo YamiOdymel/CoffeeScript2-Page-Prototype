@@ -33,6 +33,9 @@ body {
 .hljs-type, .hljs-string, .hljs-number, .hljs-selector-id, .hljs-selector-class, .hljs-quote, .hljs-template-tag, .hljs-deletion {
     color: #cda869;
 }
+.column pre {
+    margin: 0 0 2em;
+}
 
 /*-------------------//
 //       Navbar

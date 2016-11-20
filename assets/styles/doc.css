@@ -36,7 +36,7 @@ ul {
     padding: 0;
     list-style: none;
     border-right: 1px solid #ececec;
-    margin-right: 6px;
+    margin-right: -14px;
 }
 ul > li {
     padding: .4em 1em .4em 0;
@@ -52,6 +52,9 @@ ul > li > a {
 /*-------------------//
 //    Doc Section
 //-------------------*/
+.twelve.wide.column {
+    padding-left: 3em !important;
+}
 h2 {
     color: #423737;
     border-bottom: 1px solid #EEE;
